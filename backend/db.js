@@ -1,6 +1,6 @@
+import {ENV.DB_URL} from .env;
 const mongoose = require("mongoose");
-
-mongoose.connect("mongodb+srv://smishra2555:8NFlbVsuk4kCrNpJ@cluster0.rcw6na6.mongodb.net/Paytm");
+mongoose.connect(ENV.DB_URL);
 
 const userSchema = new mongoose.Schema({
     username: {
